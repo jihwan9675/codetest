@@ -1,0 +1,8 @@
+import math
+def solution(arr):
+    answer = 0
+    s1 = arr.pop()
+    for i in range(len(arr)):
+        s2 = arr.pop()
+        s1 = int(s1*s2 /math.gcd(s1,s2))
+    return s1
